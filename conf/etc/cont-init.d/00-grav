@@ -12,7 +12,7 @@ fail(){
 
 [ -d /var/www/grav/ ] || mkdir -p /var/www/grav
 
-if [ -z "$(ls -A "/var/www/grav")" ];
+if [ -z "$(ls -A "/var/www/grav" | grep -v 'lost+found' )" ];
 then
     GRAV_VERSION=$( curl -s -L https://api.github.com/repos/getgrav/grav/releases/latest | grep "tag_name" | cut -d "\"" -f4 )
     curl -s -L https://getgrav.org/download/core/grav-admin/${GRAV_VERSION} --output /tmp/${GRAV_VERSION}.zip || fail
