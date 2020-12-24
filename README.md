@@ -1,6 +1,6 @@
 ![docker build automated](https://img.shields.io/docker/cloud/automated/dotriver/grav)
 ![docker build status](https://img.shields.io/docker/cloud/build/dotriver/grav)
-![docker build status](https://img.shields.io/docker/cloud/pulls/dotriver/grav)
+![docker build status](https://img.shields.io/docker/pulls/dotriver/grav)
 
 # Grav
 
