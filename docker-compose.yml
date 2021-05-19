@@ -2,7 +2,10 @@
 version: '3'
 services:
   grav:
-    image: dotriver/grav
+    #image: dotriver/grav
+    build: .
+    environment:
+      - GRAV_VERSION=1.7.14
     ports:
       - 8080:80
     volumes:

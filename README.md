@@ -8,7 +8,9 @@ Grav documentation (here)[https://learn.getgrav.org/]
 
 # Auto configuration parameters :
 
-None
+```
+- GRAV_VERSION : 1.7.13
+```
 
 # Compose file exemple
 
